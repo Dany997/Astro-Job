@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/* Style dla nawigacji */
+nav .nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 2rem 1rem;
+  margin: 0;
+}
+nav .nav-list li {
+  margin: 0 15px;
+}
+nav .nav-list a {
+  font-size: 1.1rem;
+  color: black;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+nav .nav-list a:hover {
+  background-color: rgba(191, 201, 212, 0.6039215686);
+  border-radius: 5px;
+}
+
+/* Responsywność - tablet i telefon */
+@media (max-width: 1024px) and (min-width: 769px) {
+  nav .nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1.5rem 1rem;
+  }
+  nav .nav-list li {
+    margin: 0 10px;
+  }
+  nav .nav-list a {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+  nav .nav-list a:hover {
+    background-color: rgba(191, 201, 212, 0.6039215686);
+    border-radius: 5px;
+  }
+}
+@media (max-width: 768px) {
+  nav .nav-list {
+    display: block;
+    text-align: center;
+  }
+  nav .nav-list li {
+    margin: 10px 0;
+  }
+  nav .nav-list a {
+    font-size: 1rem;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+  }
+  nav .nav-list a:hover {
+    background-color: rgba(191, 201, 212, 0.6039215686);
+    border-radius: 5px;
+  }
+}
+/* Style dla headera */
+.header {
+  background-color: #007bff; /* Niebieski, główny kolor */
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-bottom: 2px solid #0056b3; /* Ciemniejszy odcień niebieskiego */
+}
+
+/* Dodatkowe stylowanie tytułu */
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+/* Opis pod tytułem */
+.header-description {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+  color: #eeeeee; /* Jasny kolor tekstu, żeby pasował do tła */
+  line-height: 1.6;
+}
+
+/* Styl przycisku w headerze (opcjonalny) */
+.header .cta-button {
+  background-color: #28a745; /* Zielony */
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header .cta-button:hover {
+  background-color: #218838; /* Ciemniejszy zielony */
+}
+
+/* Style dla footer */
+.footer {
+  background-color: #2f4f76; /* Ciemniejszy niebieski kolor */
+  color: white;
+  padding: 2rem 1rem;
+  border-top: 3px solid #0056b3; /* Ciemniejsza granica na górze */
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #007bff; /* Niebieski, po najechaniu */
+}
+
+.jobs-offers {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.jobs-offers h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.jobs-offers ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.jobs-offers li {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.jobs-offers li:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.jobs-offers li a {
+  text-decoration: none;
+  color: #2c3e50;
+  display: block;
+}
+.jobs-offers li a h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.jobs-offers li a p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.job-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.job-detail h3 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+.job-detail p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.job-detail ul {
+  list-style: none;
+  padding: 0;
+}
+.job-detail li {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.job-detail li:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔽 MEDIA QUERIES 🔽 */
+/* 📱 Mobile (max 768px) */
+@media (max-width: 768px) {
+  .job-detail {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+/* 📊 Tablet (max 1024px) */
+@media (max-width: 1024px) {
+  .job-detail {
+    max-width: 90%;
+    padding: 1.8rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ustalamy podstawową czcionkę na Roboto */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4; /* Tło szare */
+  color: #333333; /* Kolor tekstu */
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Kolor tła dla całej strony */
+html {
+  height: 100%;
+}
+
+/* Linki */
+a {
+  text-decoration: none;
+  color: inherit; /* Domyślny kolor tekstu */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #007bff; /* Niebieski, po najechaniu */
+}
+
+/* Główne kontenery */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}/*# sourceMappingURL=main.css.map */

@@ -12,10 +12,12 @@ import Footer from "../components/Footer.astro"
 		<title>AstroJob</title>
 	</head>
 	<body>
-	<Navbar/>
 	
+		<Navbar/>
+	<main class="main-content">
 		<slot />
-	<Footer/>
+	</main>
+		<Footer/>
 	</body>
 </html>
 

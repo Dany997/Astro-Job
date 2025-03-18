@@ -16,6 +16,13 @@ body {
 	background-color: #f4f4f4; /* Tło szare */
 	color: #333333; /* Kolor tekstu */
 	line-height: 1.6;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.main-content {
+	flex: 1;
 }
 
 /* Kolor tła dla całej strony */
