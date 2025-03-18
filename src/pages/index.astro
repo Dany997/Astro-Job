@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import { fetchJobs } from '../utils/fetchJobs';
+const jobs = await fetchJobs();
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+    <Header/>
+    <main>
+<section class="jobs-offers">
+
+<h2>Ostatnie oferty pracy:</h2>
+
+<ul>
+    {jobs.map((job: { id: string, title: string, description?: string, type:string, location: string, salary: string }) => (
+      <li>
+      
+        <a href={`/jobs/${job.id}`}>
+          <h3>Title: {job.title}</h3>
+          <p> Type: {job.type}</p>
+          <p>Location: {job.location}</p>
+          <p>Salary: {job.salary}</p>
+          <p>{job.description || 'No description available.'}</p>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>
+
+
+    </main>
+</Layout>

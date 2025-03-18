@@ -1,0 +1,43 @@
+@use './navbar';
+@use './header';
+@use './footer';
+@use './mainPage';
+@use './jobPostPage.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Ustalamy podstawową czcionkę na Roboto */
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #f4f4f4; /* Tło szare */
+	color: #333333; /* Kolor tekstu */
+	line-height: 1.6;
+}
+
+/* Kolor tła dla całej strony */
+html {
+	height: 100%;
+}
+
+/* Linki */
+a {
+	text-decoration: none;
+	color: inherit; /* Domyślny kolor tekstu */
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #007bff; /* Niebieski, po najechaniu */
+}
+
+/* Główne kontenery */
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}

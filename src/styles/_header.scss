@@ -1,0 +1,43 @@
+/* Style dla headera */
+.header {
+	background-color: #007bff; /* Niebieski, główny kolor */
+	color: white;
+	text-align: center;
+	padding: 4rem 1rem;
+	border-bottom: 2px solid #0056b3; /* Ciemniejszy odcień niebieskiego */
+}
+
+/* Dodatkowe stylowanie tytułu */
+.header-title {
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	letter-spacing: 2px;
+}
+
+/* Opis pod tytułem */
+.header-description {
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+	font-weight: 300;
+	color: #eeeeee; /* Jasny kolor tekstu, żeby pasował do tła */
+	line-height: 1.6;
+}
+
+/* Styl przycisku w headerze (opcjonalny) */
+.header .cta-button {
+	background-color: #28a745; /* Zielony */
+	color: white;
+	font-size: 1.2rem;
+	padding: 0.8rem 2rem;
+	border-radius: 8px;
+	border: none;
+	margin-top: 2rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.header .cta-button:hover {
+	background-color: #218838; /* Ciemniejszy zielony */
+}

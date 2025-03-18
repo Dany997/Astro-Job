@@ -1,0 +1,27 @@
+---
+import { fetchJobsById } from "../../utils/fetchJobsById";
+import Layout from "../../layouts/Layout.astro";
+
+const { id } = Astro.params;
+
+const job = await fetchJobsById(id);
+---
+<Layout>
+
+
+    <section class="job-detail">
+<ul>
+    <li>
+      
+          <h3>Title: {job.title}</h3>
+          <p> Type: {job.type}</p>
+          <p>Location: {job.location}</p>
+          <p>Salary: {job.salary}</p>
+          <p>{job.description || 'No description available.'}</p>
+      </li>
+
+    
+</ul>
+</section>
+
+</Layout>

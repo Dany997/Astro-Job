@@ -1,0 +1,64 @@
+.job-detail {
+	max-width: 800px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+	h3 {
+		font-size: 2rem;
+		color: #2c3e50;
+		margin-bottom: 1rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+		color: #555;
+		margin-bottom: 0.5rem;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	li {
+		padding: 1.5rem;
+		background: #f8f9fa;
+		border-radius: 8px;
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+		&:hover {
+			transform: scale(1.02);
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+/* 🔽 MEDIA QUERIES 🔽 */
+
+/* 📱 Mobile (max 768px) */
+@media (max-width: 768px) {
+	.job-detail {
+		padding: 1.5rem;
+		margin: 1rem;
+	}
+
+	h3 {
+		font-size: 1.6rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+}
+
+/* 📊 Tablet (max 1024px) */
+@media (max-width: 1024px) {
+	.job-detail {
+		max-width: 90%;
+		padding: 1.8rem;
+	}
+}
